@@ -8,8 +8,8 @@ db = MySQLdb.connect("localhost","testuser","test123","TESTDB" )
 cursor = db.cursor()
 
 # Prepare SQL query to INSERT a record into the database.
-sql = "SELECT * FROM EMPLOYEE \
-       WHERE INCOME > '%d'" % (1000)
+sql = "SELECT * FROM EMPLOYE \
+       WHERE INCOME > '%d'" % (3000)
 try:
    # Execute the SQL command
    cursor.execute(sql)
